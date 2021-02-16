@@ -1,0 +1,20 @@
+<div class="header-wrapper">
+  <header class="header">
+    <a class="header-left active" data-js="menu-toggle">
+      <h1 class="report-title">
+        {{ .Site.Title }}
+      </h1>
+    </a>
+    <div class="header-right">
+      <img src="{{ "images/duke-pophealth-logo.png" | relURL }}" class="logo" />
+    </div>
+  </header>
+  <div class="nav-menu active" data-js="menu-dropdown">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <div>
+        <a class="nav-menu-link{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+      </div>
+    {{ end }}
+  </div>
+</div>

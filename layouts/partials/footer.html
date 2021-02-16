@@ -1,0 +1,11 @@
+<div class="footer">
+  <div>DUMC 104023 • Durham, North Carolina 27710</div>
+  <div> | </div>
+  <div>Phone: (919) 668-8477</div>
+  <div> | </div>
+  <div>Email: <a href="mailto:PopHealthSciences@duke.edu" class="footer-link">PopHealthSciences@duke.edu</a></div>
+</div>
+
+{{ $main := resources.Get "js/main.js" }}
+{{ $js := $main | resources.Minify }}
+<script src="{{ $js.Permalink }}"></script>

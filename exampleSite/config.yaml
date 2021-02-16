@@ -1,0 +1,6 @@
+baseURL: /
+title: Effects of Hugo Exposure in North Carolina
+theme: "hugo-duke"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+disableKinds: ["taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+relativeURLs: true
