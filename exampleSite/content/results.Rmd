@@ -2,6 +2,7 @@
 title: 'Results'
 menu:
   main:
+    url: results/index.html
     weight: 400
 ---
 

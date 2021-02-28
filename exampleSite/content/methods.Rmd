@@ -2,6 +2,7 @@
 title: 'Methods'
 menu:
   main:
+    url: methods/index.html
     weight: 300
 ---
 
